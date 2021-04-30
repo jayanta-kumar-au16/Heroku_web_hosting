@@ -7,7 +7,9 @@ app.use(express.static('public'));
 app.engine('hbs' , exphbs({ defaultLayout: 'index' , extname: 'hbs'}));
 app.set('view engine' , 'hbs');
 
-
+app.get('/',(req,res)=>{
+    res.render('home',{layout:'main'})
+})
 app.get('/hoverboard', (req,res) =>{
 
     res.render('Hoverboard');
@@ -16,6 +18,6 @@ app.get('/TicTacToe',(req,res)=>{
     res.sendFile(path.join(__dirname +'/ticTactoe.html'));
 });
 
-app.listen(port, ()=>{
+app.listen(process.env.PORT || port, ()=>{
     console.log("server started....");
 });
