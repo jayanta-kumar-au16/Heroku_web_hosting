@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        to right , red , orange
+    );
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+  }
+ .head{
+    font-size: 80px;
+    margin-bottom: 150px;
+    color: rgb(255, 183, 0);
+    font-family: monospace;
+ }
+  .ui {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    box-shadow: rgba(0,0,0,0.3) 0px 17px 50px;
+  }
+  
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: rgb(250, 208, 135) solid;
+    font-size: 29px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    background-color: rgb(252, 253, 253);
+  }
+  
+  div:hover {
+    background-color: rgba(220, 231, 235, 0.801);
+    
+  }
+  
+  .red {
+    color: orangered;
+    font-size: 50px;
+  }
+  .green {
+    font-size: 50px;
+    color:greenyellow;
+  }
+  
+  .message {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(56, 56, 56, 0.904);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 24px;
+    display: none;
+    flex-direction: column;
+    z-index: 1;
+  }
+  
+  .text {
+    font-size: 40px;
+    color: black;
+    font-family: cursive;
+  }
+  
+  .background {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(49, 49, 49, 0.959);
+    transition: all ease 0.5s;
+  }
+  
+  .reset {
+    border: none;
+    height: 35px;
+    width: 120px;
+    display: block;
+    position: relative;
+    top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+    background-color: rgb(50, 181, 185);
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    outline: none;
+  }
+  
+  .display {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .redWins {
+    background-color: rgba(233, 89, 89, 0.897);
+  }
+  
+  .greenWins {
+    background-color: rgba(117, 233, 111, 0.726);
+  }
+  
+  
