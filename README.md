@@ -20,4 +20,4 @@
 ## **> Ensure before push your code to heroku set engines in pacakage.json file , and set your port to process.env.PORT || 3000 etc**
 ## **> run command to logged in $ heroku login**
 ## **>$ git commit -am "make it better" for commit**
-## **>$ git push heroku master for push to heroku branch from your branch**
+## **>$ git push heroku master or main for push to heroku branch from your branch**
