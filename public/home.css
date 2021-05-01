@@ -1,0 +1,32 @@
+body{
+    background: linear-gradient(to right,yellow,rgb(255, 167, 2));
+}
+
+
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: rgb(137, 216, 243);
+    width:25%;
+    height:200px;
+    box-shadow: 5px 5px 5px;
+}
+#one{
+    color: azure;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+#two{
+    color: azure;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
